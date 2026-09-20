@@ -35,7 +35,7 @@ async function generateCareerPath() {
 
     try {
 
-        const response = await fetch("http://localhost:3000/api/career-path", {
+        const response = await fetch("/api/career-path", {
 
             method: "POST",
 
