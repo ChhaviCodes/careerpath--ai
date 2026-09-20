@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #20243a;
+    min-height: 100vh;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 40px 20px 25px;
+    background: white;
+    border-bottom: 1px solid #e5e7f2;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666b80;
+    font-size: 17px;
+}
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    background: white;
+    padding: 60px 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 35px rgba(30, 40, 80, 0.08);
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #666b80;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+
+button {
+    border: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #5b5ce2;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Assessment */
+
+.assessment {
+    display: none;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(30, 40, 80, 0.08);
+    margin-bottom: 30px;
+}
+
+.assessment h2 {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d9dced;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #5b5ce2;
+}
+
+/* Result */
+
+.result {
+    display: none;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(30, 40, 80, 0.08);
+}
+
+.result h2 {
+    margin-bottom: 20px;
+}
+
+#roadmap {
+    line-height: 1.7;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .assessment,
+    .result {
+        padding: 25px;
+    }
+}
+/* Career roadmap cards */
+
+.career-card {
+    margin-top: 20px;
+    padding: 25px;
+    background: #f8f9ff;
+    border: 1px solid #e1e4f5;
+    border-radius: 16px;
+}
+
+.career-card h3 {
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.career-card h3:first-child {
+    margin-top: 0;
+}
+
+.career-card p {
+    margin-bottom: 8px;
+    color: #555b70;
+}
+
+.career-card ol {
+    padding-left: 25px;
+}
+
+.career-card li {
+    margin-bottom: 10px;
+}
+/* ===== CareerPath AI Premium Roadmap ===== */
+
+.ai-response {
+    margin-top: 20px;
+    padding: 25px;
+    background: linear-gradient(135deg, #f8f7ff, #ffffff);
+    border: 1px solid #e2e3f2;
+    border-radius: 18px;
+    line-height: 1.8;
+    white-space: normal;
+    font-size: 16px;
+    color: #34384f;
+}
+
+.career-card {
+    margin-top: 20px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e3e5f2;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(40, 45, 90, 0.08);
+}
+
+.career-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #30345c;
+}
+
+/* Result section */
+
+.result {
+    animation: resultAppear 0.5s ease;
+}
+
+@keyframes resultAppear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Buttons */
+
+button {
+    box-shadow: 0 8px 20px rgba(91, 92, 226, 0.18);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Input improvements */
+
+input,
+select {
+    transition: 0.2s ease;
+    background: #fcfcff;
+}
+
+input:hover,
+select:hover {
+    border-color: #b8b9e5;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+}
+/* ===== How It Works ===== */
+
+.how-it-works {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 22px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 35px rgba(30, 40, 80, 0.08);
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.step {
+    padding: 25px;
+    background: #f8f9ff;
+    border: 1px solid #e4e5f3;
+    border-radius: 18px;
+    transition: 0.25s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(30, 40, 80, 0.08);
+}
+
+.step-number {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #5b5ce2;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.step p {
+    color: #666b80;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ===== Career Snapshot ===== */
+
+.career-snapshot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.snapshot-item {
+    padding: 18px;
+    background: #f8f9ff;
+    border: 1px solid #e2e4f2;
+    border-radius: 15px;
+}
+
+.snapshot-item span {
+    display: block;
+    font-size: 13px;
+    color: #777b91;
+    margin-bottom: 7px;
+}
+
+.snapshot-item strong {
+    display: block;
+    font-size: 15px;
+    color: #30345c;
+    word-break: break-word;
+}
+
+/* Mobile snapshot */
+
+@media (max-width: 700px) {
+
+    .career-snapshot {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .career-snapshot {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ===== Reset Button ===== */
+
+.reset-button {
+    display: block;
+    margin: 25px auto 0;
+    background: white;
+    color: #5b5ce2;
+    border: 1px solid #cfd1ed;
+    box-shadow: none;
+}
+
+.reset-button:hover {
+    background: #f5f6ff;
+    color: #4546b8;
+}

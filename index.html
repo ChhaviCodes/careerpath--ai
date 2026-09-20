@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerPath AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CareerPath AI</h1>
+        <p>Your personalized AI-powered career roadmap</p>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Build Your Career Path 🚀</h2>
+
+            <p>
+                Tell us about yourself and let AI create
+                a personalized roadmap for your career.
+            </p>
+
+            <button onclick="startAssessment()">
+                Start My Career Path
+            </button>
+        </section>
+
+        <section id="assessment" class="assessment">
+
+            <h2>Career Assessment</h2>
+
+            <label>What are you studying?</label>
+            <input
+                type="text"
+                id="education"
+                placeholder="Example: BCA"
+            >
+
+            <label>What skills do you currently have?</label>
+            <input
+                type="text"
+                id="skills"
+                placeholder="Example: Python, HTML, CSS"
+            >
+
+            <label>What career do you want?</label>
+            <input
+                type="text"
+                id="career"
+                placeholder="Example: AI Engineer"
+            >
+
+            <label>What is your experience level?</label>
+
+            <select id="experience">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+
+            <label>How much time can you study each day?</label>
+
+            <select id="time">
+                <option value="1 hour">1 hour</option>
+                <option value="2 hours">2 hours</option>
+                <option value="3 hours">3 hours</option>
+                <option value="4+ hours">4+ hours</option>
+            </select>
+
+            <button onclick="generateCareerPath()">
+                Generate My Career Path ✨
+            </button>
+
+        </section>
+
+        <section id="result" class="result">
+
+            <section class="how-it-works">
+
+    <h2>How CareerPath AI Works</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <div class="step-number">01</div>
+            <h3>Tell Us About You</h3>
+            <p>
+                Enter your education, current skills, experience
+                and career goal.
+            </p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">02</div>
+            <h3>Analyze Your Gap</h3>
+            <p>
+                CareerPath AI identifies the important skills
+                you need to develop for your target career.
+            </p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">03</div>
+            <h3>Get Your Roadmap</h3>
+            <p>
+                Receive a structured learning path, weekly plan
+                and practical project ideas.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+            <h2>Your Career Path</h2>
+
+            <div id="roadmap"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Built with ❤️ for HackDevengers 2.0</p>
+        <p>built by Chhavi</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
